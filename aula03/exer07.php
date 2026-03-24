@@ -1,11 +1,13 @@
 <?php
-    function fatorial($x){
-        for ($i= $x; $i > 1; $i--) { 
-            $num *= $i;
-            echo "A fatorail de $x é $num";
-        }
+function fatorial($x) {
+    $resultado = 1;
+
+    for ($i = $x; $i > 1; $i--) {
+        $resultado *= $i;
     }
 
-    fatorial(2);
+    echo "O fatorial de $x é $resultado";
+}
 
+fatorial(10);
 ?>
